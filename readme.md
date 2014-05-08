@@ -8,3 +8,14 @@ This is the first time I will be designing and developing a one-page site with p
 Below are some references used in creating this site:
 
 * Coming soon!
+
+Here are some wedding sites that inspired us:
+
+* [Judy and Z](http://www.judieandz.com/ "Judy and Z")
+* [Casper en Danel](http://www.casperendanel.co.za/ "Casper en Danel")
+* [Vince and Mars](http://vinceandmarlene.com/ "Vince and Mars")
+* [Julia and Artem](http://www.artemjuliawedding.com/en "Julia and Artem")
+* [Helen and Josh](http://helenandjoshsittinginatree.com/ "Helen and Josh")
+* [Jess and Russ](http://jessandruss.us/ "Jess and Russ")
+
+This site was made with the help of [watson](http://goosecode.com/watson/ "watson").
