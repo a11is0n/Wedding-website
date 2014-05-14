@@ -7,7 +7,7 @@ This is the first time I will be designing and developing a one-page site with p
 
 Below are some references used in creating this site:
 
-* Coming soon!
+* [HTML5 Doctor](http://www.html5doctor.com/ "HTML5 Doctor")
 
 Here are some wedding sites that inspired us:
 
