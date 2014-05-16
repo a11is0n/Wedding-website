@@ -8,6 +8,7 @@ This is the first time I will be designing and developing a one-page site with p
 Below are some references used in creating this site:
 
 * [HTML5 Doctor](http://www.html5doctor.com/ "HTML5 Doctor")
+* [Bulletproof @font-face Syntax](http://www.paulirish.com/2009/bulletproof-font-face-implementation-syntax/ "Bulletproof @font-face Syntax")
 
 Here are some wedding sites that inspired us:
 

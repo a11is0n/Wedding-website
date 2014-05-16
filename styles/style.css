@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Cookie Monster';
+  src: url('../fonts/CookieMonster.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Cookie Chips';
+  src: url('../fonts/CookieChips.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Cute Love';
+  src: url('../fonts/CuteLove.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Diamonds Pearls';
+  src: url('../fonts/DiamondsPearls.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Toast Eggs';
+  src: url('../fonts/ToastEggs.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Im Invisible';
+  src: url('../fonts/ImInvisible.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Youre Just An Idiot';
+  src: url('../fonts/YoureJustAnIdiot.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Jello Raindrops';
+  src: url('../fonts/JelloRaindrops.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Aaargh';
+  src: url('../fonts/Aaargh.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Rock Salt';
+  src: url('../fonts/RockSalt.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Windsong';
+  src: url('../fonts/Windsong.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Aaargh, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+header #header_image {
+  margin: auto;
+  width: 400px;
+  height: 200px;
+  background: url('http://placekitten.com/400/200') no-repeat center center;
+}
+
+header > h1 {
+  font-size: 84px;
+  padding: 20px 0px;
+}
+
+header > h2 {
+  font-size: 24px;
+  padding: 20px 0px;
+}
+
+header > h1, header > h2 {
+  font-family: Rock Salt, Helvetica, Arial, sans-serif;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+#content > article {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+}
+
+#content > article > h1 {
+  font-size: 60px;
+  text-align: center;
+  padding: 20px 0px;
+  font-family: Rock Salt, Helvetica, Arial, sans-serif;
+}
+
+#content > article > section > h1 {
+  font-size: 36px;
+  text-align: center;
+  font-family: Aaargh, Helvetica, Arial, sans-serif;
+}
+
+#content > article > section > article > h1 {
+  font-size: 22px;
+  text-align: center;
+  font-family: Aaargh, Helvetica, Arial, sans-serif;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+}
