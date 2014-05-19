@@ -1,63 +1,9 @@
-@font-face {
-  font-family: 'Cookie Monster';
-  src: url('../fonts/CookieMonster.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
-@font-face {
-  font-family: 'Cookie Chips';
-  src: url('../fonts/CookieChips.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
-@font-face {
-  font-family: 'Cute Love';
-  src: url('../fonts/CuteLove.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
-@font-face {
-  font-family: 'Diamonds Pearls';
-  src: url('../fonts/DiamondsPearls.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
-@font-face {
-  font-family: 'Toast Eggs';
-  src: url('../fonts/ToastEggs.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
-@font-face {
-  font-family: 'Im Invisible';
-  src: url('../fonts/ImInvisible.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
-@font-face {
-  font-family: 'Youre Just An Idiot';
-  src: url('../fonts/YoureJustAnIdiot.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
-@font-face {
-  font-family: 'Jello Raindrops';
-  src: url('../fonts/JelloRaindrops.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
-@font-face {
-  font-family: 'Aaargh';
-  src: url('../fonts/Aaargh.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
-@font-face {
-  font-family: 'Rock Salt';
-  src: url('../fonts/RockSalt.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
-@font-face {
-  font-family: 'Windsong';
-  src: url('../fonts/Windsong.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
 body {
   background-color: #ffffff;
   color: #000000;
-  font-family: Aaargh, Helvetica, Arial, sans-serif;
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 header {
@@ -73,51 +19,84 @@ header #header_image {
 }
 
 header > h1 {
-  font-size: 84px;
-  padding: 20px 0px;
+  font-size: 96px;
 }
 
 header > h2 {
   font-size: 24px;
-  padding: 20px 0px;
 }
 
 header > h1, header > h2 {
-  font-family: Rock Salt, Helvetica, Arial, sans-serif;
+  font-family: Sacramento, Helvetica, Arial, fantasy;
 }
 
-header nav ul {
+header > div#nav_placeholder {
+  width: 0px;
+  height: 0px;
+}
+
+header > nav.stuck {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  margin: auto;
+}
+
+header > nav > ul {
   list-style: none;
 }
 
-header nav ul li {
+header > nav > ul > li {
   display: inline-block;
   padding: 5px;
+  margin: 0px 5px;
 }
 
 #content > article {
   width: 100%;
-  max-width: 960px;
   margin: auto;
 }
 
 #content > article > h1 {
+  padding: 10px 0px;
+  margin: 10px 0px;
   font-size: 60px;
   text-align: center;
-  padding: 20px 0px;
-  font-family: Rock Salt, Helvetica, Arial, sans-serif;
+  font-family: Architects Daughter, Helvetica, Arial, fantasy;
+  background: url('http://placekitten.com/1000/1000') no-repeat center center;
+  -webkit-background-size: cover; /* Safari 3-4 */
+          background-size: cover; /* Chrome, Firefox 4+, IE 9+, Opera, Safari 5+ */
+}
+
+#content > article > section {
+  max-width: 960px;
+  margin: auto;
 }
 
 #content > article > section > h1 {
   font-size: 36px;
   text-align: center;
-  font-family: Aaargh, Helvetica, Arial, sans-serif;
+  font-family: Architects Daughter, Helvetica, Arial, fantasy;
 }
 
 #content > article > section > article > h1 {
   font-size: 22px;
-  text-align: center;
-  font-family: Aaargh, Helvetica, Arial, sans-serif;
+}
+
+#content > article#about_us > section > article {
+  margin: 5px 0px;
+}
+
+#content > article#about_us > section > article:nth-child(even) {
+  padding: 0px 0px 0px 210px;
+  min-height: 200px;
+  background: url('http://placekitten.com/200/200') no-repeat center left;
+}
+
+#content > article#about_us > section > article:nth-child(odd) {
+  padding: 0px 210px 0px 0px;
+  min-height: 200px;
+  background: url('http://placekitten.com/200/200') no-repeat center right;
 }
 
 footer {
