@@ -52,6 +52,11 @@ header > nav > ul > li {
   margin: 0px 5px;
 }
 
+header > nav > ul > li.active {
+  font-weight: bold;
+  background-color: #ff0000;
+}
+
 #content > article {
   width: 100%;
   margin: auto;
