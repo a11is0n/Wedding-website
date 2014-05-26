@@ -53,7 +53,6 @@ header > nav > ul > li {
 }
 
 header > nav > ul > li.active {
-  font-weight: bold;
   background-color: #ff0000;
 }
 
@@ -88,20 +87,28 @@ header > nav > ul > li.active {
   font-size: 22px;
 }
 
-#content > article#about_us > section > article {
+#content > article#about_us > section > div {
   margin: 5px 0px;
+  display: table;
+  padding: 0px 210px;
 }
 
-#content > article#about_us > section > article:nth-child(even) {
+#content > article#about_us > section > div:nth-child(even) {
   padding: 0px 0px 0px 210px;
   min-height: 200px;
   background: url('http://placekitten.com/200/200') no-repeat center left;
 }
 
-#content > article#about_us > section > article:nth-child(odd) {
+#content > article#about_us > section > div:nth-child(odd) {
   padding: 0px 210px 0px 0px;
   min-height: 200px;
   background: url('http://placekitten.com/200/200') no-repeat center right;
+}
+
+#content > article#about_us > section > div > p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: justify;
 }
 
 footer {
