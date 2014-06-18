@@ -1,6 +1,9 @@
+var ABOUT_US_BACKGROUND_IMAGE_HEIGHT = 300;
+
 var $window;
 var $nav, navTop, navHeight, $navPlaceholder;
 var $pageLinks, pageLocations, currentActivePageHash;
+var $aboutUsDivs;
 
 $(document).ready(setup);
 
@@ -20,8 +23,12 @@ function setup() {
     pageLocations[pageHash] = $('#' + pageHash).offset().top;
   });
 
+  $aboutUsDivs = $('#content > article#about_us > section > div');
+
   $('header > nav > ul > li').on('click', 'a', smoothScroll);
+  
   $window.scroll(scrollChecks);
+  scrollChecks(); // Call this once on load to set up initial positions
 }
 
 function smoothScroll(event) {
@@ -38,6 +45,7 @@ function smoothScroll(event) {
 function scrollChecks() {
   toggleNav();
   updateActivePageLink();
+  moveParallax();
 }
 
 function toggleNav() {
@@ -74,4 +82,33 @@ function updateActivePageLink() {
 
 function getPageHash($element) {
   return $element ? $element.attr('href').replace(/^.*?(#|$)/,'') : null;
+}
+
+function moveParallax() {
+  var windowTop = $window.scrollTop();
+  var windowHeight = $window.height();
+  var windowBottom = windowTop + windowHeight;
+  $aboutUsDivs.each(function() {
+    $this = $(this);
+    if (elementOnScreen($this, windowTop, windowBottom)) {
+      var offset = $this.offset();
+      var height = $this.height();
+      var currentOffset = offset.top - (windowTop - height);
+      var startPosition = 0;
+      var endPosition = height - ABOUT_US_BACKGROUND_IMAGE_HEIGHT;
+      var distanceToMove = endPosition - startPosition;
+      var distanceToTravel = windowHeight + height;
+      var newPosition = endPosition - (currentOffset / distanceToTravel) * distanceToMove;
+      var alignment = $this.is(':nth-child(even)') ? 'left' : 'right';
+      $this.css('background-position', alignment + ' ' + newPosition + 'px');
+    }
+  });
+}
+
+function elementOnScreen($element, windowTop, windowBottom) {
+  var offset = $element.offset();
+  var top = offset.top;
+  var height = $element.height();
+  var bottom = top + height;
+  return (top >= windowTop && top <= windowBottom) || (bottom >= windowTop && bottom <= windowBottom);
 }

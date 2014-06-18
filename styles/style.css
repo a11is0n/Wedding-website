@@ -90,19 +90,18 @@ header > nav > ul > li.active {
 #content > article#about_us > section > div {
   margin: 5px 0px;
   display: table;
-  padding: 0px 210px;
+  min-height: 200px;
+  background-size: 200px 300px;
 }
 
 #content > article#about_us > section > div:nth-child(even) {
   padding: 0px 0px 0px 210px;
-  min-height: 200px;
-  background: url('http://placekitten.com/200/200') no-repeat center left;
+  background: url('http://placekitten.com/200/300') no-repeat center left;
 }
 
 #content > article#about_us > section > div:nth-child(odd) {
   padding: 0px 210px 0px 0px;
-  min-height: 200px;
-  background: url('http://placekitten.com/200/200') no-repeat center right;
+  background: url('http://placekitten.com/200/300') no-repeat center right;
 }
 
 #content > article#about_us > section > div > p {
