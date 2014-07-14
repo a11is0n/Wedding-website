@@ -3,7 +3,7 @@ var ABOUT_US_BACKGROUND_IMAGE_HEIGHT = 300;
 var $window;
 var $nav, navTop, navHeight, $navPlaceholder;
 var $pageLinks, pageLocations, currentActivePageHash;
-var $aboutUsDivs;
+var $aboutUsImageDivs;
 
 $(document).ready(setup);
 
@@ -23,7 +23,7 @@ function setup() {
     pageLocations[pageHash] = $('#' + pageHash).offset().top;
   });
 
-  $aboutUsDivs = $('#content > article#about_us > section > div');
+  $aboutUsImageDivs = $('#content > article#about_us > section > div > div.image_cell > div');
 
   $('header > nav > ul > li').on('click', 'a', smoothScroll);
   
@@ -88,7 +88,7 @@ function moveParallax() {
   var windowTop = $window.scrollTop();
   var windowHeight = $window.height();
   var windowBottom = windowTop + windowHeight;
-  $aboutUsDivs.each(function() {
+  $aboutUsImageDivs.each(function() {
     $this = $(this);
     if (elementOnScreen($this, windowTop, windowBottom)) {
       var offset = $this.offset();
