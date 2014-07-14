@@ -1,9 +1,9 @@
-var ABOUT_US_BACKGROUND_IMAGE_HEIGHT = 300;
+var ALTERNATE_IMAGE_TEXT_BACKGROUND_IMAGE_HEIGHT = 300;
 
 var $window;
 var $nav, navTop, navHeight, $navPlaceholder;
 var $pageLinks, pageLocations, currentActivePageHash;
-var $aboutUsImageDivs;
+var $alternateImageTextImageDivs;
 
 $(document).ready(setup);
 
@@ -23,7 +23,7 @@ function setup() {
     pageLocations[pageHash] = $('#' + pageHash).offset().top;
   });
 
-  $aboutUsImageDivs = $('#content > article#about_us > section > div > div.image_cell > div');
+  $alternateImageTextImageDivs = $('#content > article.alternate_image_text > section > div > div.image_cell > div');
 
   $('header > nav > ul > li').on('click', 'a', smoothScroll);
   
@@ -88,14 +88,14 @@ function moveParallax() {
   var windowTop = $window.scrollTop();
   var windowHeight = $window.height();
   var windowBottom = windowTop + windowHeight;
-  $aboutUsImageDivs.each(function() {
+  $alternateImageTextImageDivs.each(function() {
     $this = $(this);
     if (elementOnScreen($this, windowTop, windowBottom)) {
       var offset = $this.offset();
       var height = $this.height();
       var currentOffset = offset.top - (windowTop - height);
       var startPosition = 0;
-      var endPosition = height - ABOUT_US_BACKGROUND_IMAGE_HEIGHT;
+      var endPosition = height - ALTERNATE_IMAGE_TEXT_BACKGROUND_IMAGE_HEIGHT;
       var distanceToMove = endPosition - startPosition;
       var distanceToTravel = windowHeight + height;
       var newPosition = endPosition - (currentOffset / distanceToTravel) * distanceToMove;
