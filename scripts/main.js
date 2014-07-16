@@ -23,7 +23,7 @@ function setup() {
     pageLocations[pageHash] = $('#' + pageHash).offset().top;
   });
 
-  $alternateImageTextImageDivs = $('#content > article.alternate_image_text > section > div > div.image_cell > div');
+  $alternateImageTextImageDivs = $('#content > article.alternate_image_text > section > div > div.image_cell > a > div');
 
   $('header > nav > ul > li').on('click', 'a', smoothScroll);
   

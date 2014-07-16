@@ -97,10 +97,10 @@ header > nav > ul > li.active {
   vertical-align: middle;
 }
 
-#content > article.alternate_image_text > section > div > div.image_cell > div {
+#content > article.alternate_image_text > section > div > div.image_cell > a > div {
   width: 200px;
   height: 200px;
-  background: url('http://placekitten.com/200/300') no-repeat;
+  background: no-repeat;
 }
 
 #content > article.alternate_image_text > section > div > div.text {
@@ -120,6 +120,10 @@ header > nav > ul > li.active {
 #content > article.alternate_image_text > section > div > div.text > h1 {
   padding: 5px 0px;
   font-size: 20px;
+}
+
+#content > article.centered_text > section > p {
+  text-align: center;
 }
 
 footer {
