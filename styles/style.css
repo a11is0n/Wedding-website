@@ -6,6 +6,18 @@ body {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: underline;
+}
+
+a, a:link, a:visited {
+  color: #000000;
+}
+
+a:hover, a:focus, a:active {
+  color: #ae8aa6;
+}
+
 header {
   width: 100%;
   text-align: center;
@@ -35,11 +47,17 @@ header > div#nav_placeholder {
   height: 0px;
 }
 
+header > nav {
+  background-color: #ffffff;
+}
+
 header > nav.stuck {
   width: 100%;
   position: fixed;
   top: 0px;
   margin: auto;
+  -webkit-box-shadow: 0px 0px 5px 2px #000000; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+          box-shadow: 0px 0px 5px 2px #000000; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 }
 
 header > nav > ul {
@@ -47,13 +65,22 @@ header > nav > ul {
 }
 
 header > nav > ul > li {
+  height: 30px;
+  line-height: 30px;
   display: inline-block;
   padding: 5px;
-  margin: 0px 5px;
 }
 
 header > nav > ul > li.active {
-  background-color: #ff0000;
+  background-color: #d0cccb;
+}
+
+#content > article:before {
+  display: block;
+  content: '';
+  margin-top: -30px;
+  height: 30px;
+  visibility: hidden;
 }
 
 #content > article {
@@ -67,9 +94,8 @@ header > nav > ul > li.active {
   font-size: 60px;
   text-align: center;
   font-family: Architects Daughter, Helvetica, Arial, fantasy;
-  background: url('http://placekitten.com/1000/1000') no-repeat center center;
-  -webkit-background-size: cover; /* Safari 3-4 */
-          background-size: cover; /* Chrome, Firefox 4+, IE 9+, Opera, Safari 5+ */
+  text-shadow: 2px 2px 5px #ffffff;
+  background-color: #ae8aa6;
 }
 
 #content > article > section {
