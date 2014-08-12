@@ -33,8 +33,8 @@ function setup() {
 
 function smoothScroll(event) {
   event.preventDefault();
-  var selectedPage = $(this).attr('href');
-  var destination = $(selectedPage).offset().top;
+  var selectedPage = $(this).attr('href').replace(/^.*?(#|$)/,'');
+  var destination = pageLocations[selectedPage];
   $('body').animate({scrollTop: destination}, 750, function() {
     window.location.hash = selectedPage;
   });

@@ -25,9 +25,9 @@ header {
 
 header #header_image {
   margin: auto;
-  width: 400px;
+  width: 200px;
   height: 200px;
-  background: url('http://placekitten.com/400/200') no-repeat center center;
+  background: url('../images/kiss.jpg') no-repeat center center;
 }
 
 header > h1 {
@@ -127,6 +127,7 @@ header > nav > ul > li.active {
   width: 200px;
   height: 200px;
   background: no-repeat;
+  border-radius: 15px;
 }
 
 #content > article.alternate_image_text > section > div > div.text {
@@ -152,7 +153,33 @@ header > nav > ul > li.active {
   text-align: center;
 }
 
+#content > article > section > div.image {
+  text-align: center;
+}
+
+#content > article > section > div.image > a > img {
+  border-radius: 15px;
+}
+
+#content > article#registry > section > div.image > a > img {
+  width: 720px;
+  height: 400px;
+}
+
+#content > article#contact_us > section > div.image > a > img {
+  width: 720px;
+  height: 488px;
+}
+
+#content > article#wedding_info > section > div.image > a > img {
+  width: 720px;
+  height: 480px;
+}
+
 footer {
   width: 100%;
   text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #d0cccb;
 }
