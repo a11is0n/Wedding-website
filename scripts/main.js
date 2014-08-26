@@ -26,6 +26,7 @@ function setup() {
   $alternateImageTextImageDivs = $('#content > article.alternate_image_text > section > div > div.image_cell > a > div');
 
   $('header > nav > ul > li').on('click', 'a', smoothScroll);
+  $('.smooth_scroll').on('click', smoothScroll);
   
   $window.scroll(scrollChecks);
   scrollChecks(); // Call this once on load to set up initial positions
