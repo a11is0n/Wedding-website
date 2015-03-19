@@ -25,9 +25,10 @@ header {
 
 header #header_image {
   margin: auto;
-  width: 200px;
+  width: 425px;
   height: 200px;
-  background: url('../images/kiss.jpg') no-repeat center center;
+  background: url('../images/wedding.png') no-repeat center center;
+  background-size: cover;
 }
 
 header > h1 {
