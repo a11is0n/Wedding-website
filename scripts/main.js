@@ -194,6 +194,10 @@ function setUpEngagementGallery() {
   $(window).bind("load", scaleEngagementSlider);
   $(window).bind("resize", scaleEngagementSlider);
   $(window).bind("orientationchange", scaleEngagementSlider);
+  slider.$On($JssorSlider$.$EVT_CLICK, function(slideIndex){
+    imageUrl = $('.engagement_gallery_image').eq(slideIndex).attr('src');
+    window.open(imageUrl);
+  });
 
   $('.jssort02 .w').each(function() {
     $this = $(this);
